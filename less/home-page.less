@@ -56,12 +56,6 @@
 		display: flex;
 		justify-content: center;
 
-		@media @phone {
-			section .walk {
-				flex-direction: column-reverse;
-			}
-		}
-
 		.walk-text {
 			width: 50%;
 
@@ -87,6 +81,17 @@
 					background-color: lighten(@sea-shell, 20%);
 				}
 			}
+			@media @phone {
+				.btn {
+					.box_layout(20px, 0, 100%);
+					font-size: 2rem;
+				}
+			}
+		}
+		@media @phone {
+			.walk-text {
+				width: 100%;
+			}
 		}
 
 		.walk-img {
@@ -96,6 +101,17 @@
 			img {
 				.image_style(100%, auto, 10px);
 			}
+		}
+		@media @phone {
+			.walk-img {
+				width: 100%;
+			}
+		}
+	}
+	@media @phone {
+		.walk {
+			flex-direction: column-reverse;
+			padding: 15px;
 		}
 	}
 } // home
