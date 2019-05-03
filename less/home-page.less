@@ -10,7 +10,11 @@
 			padding: 0 15px;
 		}
 	}
-
+	@media @phone {
+		.main-header {
+			border-radius: 0.25rem;
+		}
+	}
 	.space-images {
 		.custom-layout(center, center);
 		flex-wrap: wrap;
@@ -19,6 +23,17 @@
 		img {
 			.image_style(28%, 100%, 20px);
 			margin: 20px 2.5%;
+		}
+		@media @phone {
+			img {
+				.image_style(100%, 100%, 20px);
+			}
+			img:nth-of-type(2) {
+				display: none;
+			}
+			img:nth-of-type(3) {
+				display: none;
+			}
 		}
 	}
 
