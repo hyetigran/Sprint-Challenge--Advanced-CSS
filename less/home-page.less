@@ -53,16 +53,17 @@
 			}
 
 			.btn {
-				padding: 0.5rem;
-				width: 20%;
+				.box_layout( 5px, 0, 20%);
+				// padding: 0.5rem;
+				// width: 20%;
 				color: @sea-shell;
 				background-color: @btn-bg-color;
 				border-radius: 0.25rem;
 				text-align: center;
 				cursor: pointer;
 				&:hover {
-					color: @btn-bg-color;
-					background-color: @sea-shell;
+					color: darken(@btn-bg-color, 20%);
+					background-color: lighten(@sea-shell, 20%);
 				}
 			}
 		}
