@@ -207,6 +207,7 @@ footer {
 @media (max-width: 500px) {
   .home .main-header {
     border-radius: 0.25rem;
+    width: 100%;
   }
 }
 .home .space-images {
