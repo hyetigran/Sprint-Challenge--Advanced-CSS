@@ -56,6 +56,12 @@
 		display: flex;
 		justify-content: center;
 
+		@media @phone {
+			section .walk {
+				flex-direction: column-reverse;
+			}
+		}
+
 		.walk-text {
 			width: 50%;
 

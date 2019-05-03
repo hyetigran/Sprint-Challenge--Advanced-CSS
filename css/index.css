@@ -189,8 +189,8 @@ p {
   margin: 0 1.5rem;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848e;
+  background: #f6f6f6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -250,6 +250,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk section .walk {
+    flex-direction: column-reverse;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
