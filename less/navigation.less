@@ -1,1 +1,24 @@
 // Navigation code here
+
+.navigation {
+	.custom-layout(center, center);
+	background-color: @nav-bg;
+	flex-direction: column;
+	border-bottom: 1px solid @nav-border;
+	div {
+		display: inherit;
+		justify-content: center;
+		margin: 1rem;
+	}
+	nav {
+		.custom-layout(center, center);
+		font-size: 2rem;
+
+		a {
+			text-decoration: none;
+			color: @nav-font;
+			font-size: 1.5rem;
+			margin: 0 1.5rem;
+		}
+	}
+}
